@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url('images/brick.png');
+  background-position: center;
+
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: 'Roboto Mono', monospace;
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 0 1.6rem;
+}
+
+.avatar {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 2.4rem;
+}
+
+.avatar__image {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  line-height: 1.6;
+  letter-spacing: 1rem;
+  text-shadow: .8rem .8rem 0 black;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  margin-top: .8rem;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+.description {
+  margin: 2.4rem 0 1.6rem;
+}
+
+.social {
+  list-style: none;
+}
+
+.social__item {
+  display: inline-block;
+  margin-bottom: 1.6rem;
+}
+
+.social__item:last-child {
+  margin: 0
+}
+
+.social__link {
+  display: block;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: .4rem .8rem;
+  border: .1rem solid #ffffff;
+}
+
+@media screen and (min-width: 992px) {
+  .home {
+    max-width: 99.2rem;
+    margin: auto;
+    text-align: left;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .title {
+    font-size: 4.8rem;
+  }
+
+  .subtitle {
+    font-size: 2.4rem;
+  }
+
+  .avatar,
+  .info__content {
+    flex: 0 1 auto;
+  }
+
+  .avatar {
+    width: 35rem;
+    margin: 0;
+    margin-right: 3.2rem;
+  }
+
+  .social__link:hover,
+  .social__link:focus {
+    color: #0d0d0d;
+    background-color: #ffffff;
+  }
+
+  .break {
+    display: block;
+  }
+}
